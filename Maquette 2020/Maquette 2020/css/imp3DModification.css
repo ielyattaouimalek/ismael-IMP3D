@@ -1,0 +1,32 @@
+.dema{
+            margin-top: -30px;
+        }
+        .ui-table-columntoggle-btn{
+            display: none;
+        }
+        .accordion{
+            margin-bottom: -25px;
+        }
+        .accordion ul li{
+            margin-top: -36px;
+            margin-bottom: -34px;
+
+        }
+        .arreglo-accordion{
+            margin-bottom:px;
+        }
+        .fin{
+            margin-bottom: 33px;
+        }
+        .arreglo-accordion ul li{
+            margin-bottom: -17px;
+        }
+         .arreglo-accordion ul li button{
+            float: right;
+        }
+        section .ui-btn{
+            width: 400px;
+        }
+        section .ui-input-text{
+            width: 400px;
+        }
