@@ -1,134 +1,114 @@
+<!--</--!><a href="#utilisateurs" style="text-decoration: none;"><button>Utilisateurs</button></a>-->
+
 <!doctype html>
 <html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Conection</title>
+    <title>Espace Utilisateur</title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-   
-    <style type="text/css">
-        .ui-table-columntoggle-btn{
-            display: none;
-        }
-        .accordion{
-            margin-bottom: -25px;
-        }
-        .accordion ul li{
-            margin-top: -35px;
-            margin-bottom: -35px;
-    </style>
+
+    <link rel="stylesheet" href="css/imp3DModification.css"/>
+
     
 </head>
 
 
 
-<body style="background-color: white;">
+<body>
    
     <div data-role="page" id="accueil">
-    
-    <div data-role="header">
+    <div data-role="header" align="middle">
+              <section>
                <img src="image/logo.PNG" style="margin: 10px;">
-                
-                <h4 style="float: right; margin-left: -0.1px; margin-right: 10px">EL YATTAOUI Ismael<br>UTILISATEUR</h4>
+               <a href="#rightpanel3"><img src="image/menu.png" style="margin-top:22px; margin-right: 15px; float: right; width:30px;"></a>
+              </section>    
 
-               <img src="image/icon-utilisateur.png" style="margin-top:10px; margin-right: 10px; float: right; width:50px;">
-               
-                                  
             </div><!-- /header -->
     
     <div role="main" class="ui-content"> 
-            
-            <div data-role="navbar" data-grid="d">
-                <ul>
-                    <li><a href="#" class="ui-btn-active">Liste des jobs</a></li>
-                    <li><a href="#observation-job">Observation job</a></li>
-                    <li><a href="#demande">Demande d'impression</a></li>
-                    <li><a href="#preferences">Préférences</a></li>
-                    <li><a style="color: red;" href="#logout">Deconnexion</a></li>
 
-                </ul>
-        </div><!-- /navbar -->
-      
-       <h1 style="margin-bottom: -35px;">Lste des jobs</h1>
+        <div data-role="panel" id="rightpanel3" data-position="right" data-display="overlay" data-theme="" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+        
+        <h4 style="float: right; margin-left: -10px; margin-right: 10px; margin-top: 3px">EL YATTAOUI Ismael<br>UTILISATEUR<br>
+        <a href="#logout" style="color: red; text-decoration: none; font-size: 15px;">Se deconnecter</a></h4>
+
+        <img src="image/icon-utilisateur.png" style="float: left; width:55px;">
+        
+        <br>
+        <br>
        
-       <div class="atrap">
-       <center>
-        <table data-role="table" id="table-custom-2" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive">
-         <thead>
-           <tr class="ui-bar-d">
-             <th data-priority="1">Imprimante</th>
-             <th data-priority="1">Job</th>
-             <th data-priority="1">Durée (min)</th>
-             <th data-priority="1">Prix (euro)</th>
-             
-           </tr>
-         </thead>
-         <tbody>
-           <tr>
-             <th>IMP-3D</th>
-             <td>Clavier</td>
-             <td>142</td>
-             <td>74</td>
-           </tr>
-           <tr>
-             <th>IMP-3D</th>
-             <td>Souris</td>
-             <td>15</td>
-             <td>64</td>
-           </tr>
-           <tr>
-             <th>IMP-3D</th>
-             <td>Camera</td>
-             <td>17</td>
-             <td>87</td>
-           </tr>
-           <tr>
-             <th>IMP-3D</th>
-             <td>Clavier</td>
-             <td>96</td>
-             <td>87</td>
-           </tr>
-           <tr>
-             <th>IMP-3D</th>
-             <td>Ecran</td>
-             <td>9</td>
-             <td>87</td>
-           </tr>
-           <tr>
-             <th>IMP-3D</th>
-             <td>Bouchon</td>
-             <td>92</td>
-             <td>74</td>
-           </tr>
-           <tr>
-             <th>IMP-3D</th>
-             <td>Tournevis</td>
-             <td>91</td>
-             <td>122</td>
-           </tr>
-           <tr>
-             <th>IMP-3D</th>
-             <td>Clavier</td>
-             <td>90</td>
-             <td>72</td>
-           </tr>
-           <tr>
-             <th>IMP-3D</th>
-             <td>Clavier</td>
-             <td>89</td>
-             <td>85</td>
-           </tr>
-           <tr>
-             <th>IMP-3D</th>
-             <td>Stylo</td>
-             <td>84</td>
-             <td>78</td>
-           </tr>
-         </tbody>
-       </table>
-    </center>
+        <center>
+           <form>
+           <br>
+            <a href="#accueil" style="text-decoration: none;"><button>Liste des Jobs</button></a>
+            
+            <a href="#observation-job" style="text-decoration: none;"><button>Observation job</button></a>
+            
+            <a href="#demande" style="text-decoration: none;"><button>Demande d'impression</button></a>
+            
+            <a href="#preferences" style="text-decoration: none;"><button>Préférences</button></a>
+                        
+            </form>
+            
+        </center>
+        
+        
+	    </div>
+      
+       <h1>Liste des jobs</h1>
+       
+       <div>
+    
+    <div data-role="collapsibleset" data-theme="a" data-content-theme="a" class="arreglo-accordion">
+    <div data-role="collapsible">
+        <h3>monfichier.stl<span style="float: right;">Demandé</span></h3>
+    <ul style="margin-top: -45px;" data-role="listview" data-filter="false" data-input="#filterBasic-input">
+    <li>Imprimante<span style="float: right;">IMP-3D</span></li>
+    <li>Durée (min)<span style="float: right;">-</span></li>
+    <li>Prix (euros)<span style="float: right;">-</span></li>
+    </ul>      
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>support-camera.stp<a href="observation-job" style="text-decoration: none; float: right; z-index: 1">En cours -►</a></h3>
+    <ul style="margin-top: -45px;" data-role="listview" data-filter="false" data-input="#filterBasic-input">
+    <li>Imprimante<span style="float: right;">IMP-3D</span></li>
+    <li>Durée (min)<span style="float: right;">98</span></li>
+    <li>Prix (euros)<span style="float: right;">36,25</span></li>
+    </ul>      
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>ecran.stl<a href="observation-job" style="text-decoration: none; float: right;">En cours -►</a></h3>
+    <ul style="margin-top: -45px;" data-role="listview" data-filter="false" data-input="#filterBasic-input">
+    <li>Imprimante<span style="float: right;">IMP-3D</span></li>
+    <li>Durée (min)<span style="float: right;">-</span></li>
+    <li>Prix (euros)<span style="float: right;">-</span></li>
+    </ul>      
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>souris.stp<span style="float: right;">Finit</span></h3>
+    <ul style="margin-top: -45px;" data-role="listview" data-filter="false" data-input="#filterBasic-input">
+    <li>Imprimante<span style="float: right;">IMP-3D</span></li>
+    <li>Durée (min)<span style="float: right;">95</span></li>
+    <li>Prix (euros)<span style="float: right;">36,25</span></li>
+    </ul>      
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>clavier.stp<span style="float: right;">Echec</span></h3>
+    <ul style="margin-top: -45px;" data-role="listview" data-filter="false" data-input="#filterBasic-input">
+    <li>Imprimante<span style="float: right;">IMP-3D</span></li>
+    <li>Durée (min)<span style="float: right;">95</span></li>
+    <li>Prix (euros)<span style="float: right;">36,25</span></li>
+    </ul>      
+    </div>
+    
+</div>
     </div>
                       
             </div><!-- /main -->
@@ -141,26 +121,42 @@
     
     <div data-role="page" id="observation-job">
     
-    <div data-role="header">
+    <div data-role="header" align="middle">
+              <section>
                <img src="image/logo.PNG" style="margin: 10px;">
-                
-                <h4 style="float: right; margin-left: -0.1px; margin-right: 10px">EL YATTAOUI Ismael<br>UTILISATEUR</h4>
+               <a href="#rightpanel3"><img src="image/menu.png" style="margin-top:22px; margin-right: 15px; float: right; width:30px;"></a>
+              </section>    
 
-               <img src="image/icon-utilisateur.png" style="margin-top:10px; margin-right: 10px; float: right; width:50px;">
-               
-                                  
             </div><!-- /header -->
+    
     <div role="main" class="ui-content"> 
-            <div data-role="navbar" data-grid="d">
-                <ul>
-                    <li><a href="#accueil">Liste des jobs</a></li>
-                    <li><a href="#" class="ui-btn-active">Observation job</a></li>
-                    <li><a href="#demande">Demande d'impression</a></li>
-                    <li><a href="#preferences">Préférences</a></li>
-                    <li><a style="color: red;" href="#logout">Deconnexion</a></li>
 
-                </ul>
-        </div><!-- /navbar -->
+        <div data-role="panel" id="rightpanel3" data-position="right" data-display="overlay" data-theme="" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+        
+        <h4 style="float: right; margin-left: -10px; margin-right: 10px; margin-top: 3px">EL YATTAOUI Ismael<br>UTILISATEUR<br>
+        <a href="#index.html" style="color: red; text-decoration: none; font-size: 15px;">Se deconnecter</a></h4>
+
+        <img src="image/icon-utilisateur.png" style="float: left; width:55px;">
+        
+        <br>
+        <br>
+       
+        <center>
+           <form>
+           <br>
+            <a href="#accueil" style="text-decoration: none;"><button>Liste des Jobs</button></a>
+            
+            <a href="#observation-job" style="text-decoration: none;"><button>Observation job</button></a>
+            
+            <a href="#demande" style="text-decoration: none;"><button>Demande d'impression</button></a>
+            
+            <a href="#preferences" style="text-decoration: none;"><button>Préférences</button></a>            
+            </form>
+            
+        </center>
+        
+        
+	    </div>
       
        <h1 style="margin-bottom: -10px;">Observation job</h1>
         <div data-role="collapsibleset" data-inset="false">
@@ -188,7 +184,7 @@
 
 </div>
           
-          <center><img src="image/exemple.jpg"  width="1000px"></center>
+          <center><img src="image/exemple.jpg"  width="75%"></center>
        
             </div><!-- /main -->
     
@@ -200,33 +196,50 @@
     
     <div data-role="page" id="demande">
     
-    <div data-role="header">
+    <div data-role="header" align="middle">
+              <section>
                <img src="image/logo.PNG" style="margin: 10px;">
-                
-                <h4 style="float: right; margin-left: -0.1px; margin-right: 10px">EL YATTAOUI Ismael<br>UTILISATEUR</h4>
+               <a href="#rightpanel3"><img src="image/menu.png" style="margin-top:22px; margin-right: 15px; float: right; width:30px;"></a>
+              </section>    
 
-               <img src="image/icon-utilisateur.png" style="margin-top:10px; margin-right: 10px; float: right; width:50px;">
-               
-                                  
             </div><!-- /header -->
     
     <div role="main" class="ui-content"> 
-            <div data-role="navbar" data-grid="d">
-                <ul>
-                    <li><a href="#accueil">Liste des jobs</a></li>
-                    <li><a href="#observation-job">Observation job</a></li>
-                    <li><a href="#demande"  class="ui-btn-active">Demande d'impression</a></li>
-                    <li><a href="#preferences">Préférences</a></li>
-                    <li><a style="color: red;" href="#logout">Deconnexion</a></li>
 
-                </ul>
-        </div><!-- /navbar -->
-      
+        <div data-role="panel" id="rightpanel3" data-position="right" data-display="overlay" data-theme="" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+        
+        <h4 style="float: right; margin-left: -10px; margin-right: 10px; margin-top: 3px">EL YATTAOUI Ismael<br>UTILISATEUR<br>
+        <a href="#index.html" style="color: red; text-decoration: none; font-size: 15px;">Se deconnecter</a></h4>
+
+        <img src="image/icon-utilisateur.png" style="float: left; width:55px;">
+        
+        <br>
+        <br>
+       
+        <center>
+           <form>
+           <br>
+            <a href="#accueil" style="text-decoration: none;"><button>Liste des Jobs</button></a>
+            
+            <a href="#observation-job" style="text-decoration: none;"><button>Observation job</button></a>
+            
+            <a href="#demande" style="text-decoration: none;"><button>Demande d'impression</button></a>
+            
+            <a href="#preferences" style="text-decoration: none;"><button>Préférences</button></a>
+                        
+            </form>
+            
+        </center>
+        
+        
+	    </div>
+         <br>
+        <center>
+      <section>
        <h1>Demandes d'impression</h1>
                      <br>
                      <br>
                      <br>
-        <center>
             <h2>Deposez vos fichiers</h2>
             <h3>Formats autorisés: ".stl" et ".stp"</h3>
             <label for="file">Fichier:</label>
@@ -236,7 +249,7 @@
             <form>
                 <input type="submit" value="Valider">
             </form>
-       
+           </section>
         </center>
         
                       
@@ -250,39 +263,56 @@
     
     <div data-role="page" id="preferences">
     
-    <div data-role="header">
+    <div data-role="header" align="middle">
+        <section>
                <img src="image/logo.PNG" style="margin: 10px;">
-                
-                <h4 style="float: right; margin-left: -0.1px; margin-right: 10px">EL YATTAOUI Ismael<br>UTILISATEUR</h4>
-
-               <img src="image/icon-utilisateur.png" style="margin-top:10px; margin-right: 10px; float: right; width:50px;">
-               
-                                  
+               <a href="#rightpanel3"><img src="image/menu.png" style="margin-top:22px; margin-right: 15px; float: right; width:30px;"></a>
+              </section>    
+                                  
             </div><!-- /header -->
     <div role="main" class="ui-content"> 
-            <div data-role="navbar" data-grid="d">
-                <ul>
-                    <li><a href="#accueil">Liste des jobs</a></li>
-                    <li><a href="#observation-job">Observation job</a></li>
-                    <li><a href="#demande">Demande d'impression</a></li>
-                    <li><a href="#preferences"  class="ui-btn-active">Préférences</a></li>
-                    <li><a style="color: red;" href="#logout">Deconnexion</a></li>
+                <div data-role="panel" id="rightpanel3" data-position="right" data-display="overlay" data-theme="" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-animate ui-panel-open">
+        
+        <h4 style="float: right; margin-left: -10px; margin-right: 10px; margin-top: 3px">EL YATTAOUI Ismael<br>UTILISATEUR<br>
+        <a href="#index.html" style="color: red; text-decoration: none; font-size: 15px;">Se deconnecter</a></h4>
 
-                </ul>
-        </div><!-- /navbar -->
+        <img src="image/icon-utilisateur.png" style="float: left; width:55px;">
+        
+        <br>
+        <br>
+       
+        <center>
+           <form>
+           <br>
+            <a href="#accueil" style="text-decoration: none;"><button>Liste des Jobs</button></a>
+            
+            <a href="#observation-job" style="text-decoration: none;"><button>Observation job</button></a>
+            
+            <a href="#demande" style="text-decoration: none;"><button>Demande d'impression</button></a>
+            
+            <a href="#preferences" style="text-decoration: none;"><button>Préférences</button></a>
+                        
+            </form>
+            
+        </center>
+        
+        
+	    </div>
+         <br>
       
       <center>
           <h1>Modifier mes informations</h1>
-          <form>
+          <section>
                 <input type="email" data-clear-btn="false" name="email-1" id="email-1" value="" placeholder="Email">
                 <input type="email" data-clear-btn="false" name="email-1" id="confirmation-email-1" value=""  placeholder="Confirmation email">
                 <input type="password" data-clear-btn="false" name="password-1" id="password-1" value="" autocomplete="off"  placeholder="Mot de passe">
                 <input type="password" data-clear-btn="false" name="password-1" id="confirmation-password-1" value="" autocomplete="off"  placeholder="Confirmation mot de passe">
                 <input type="password" data-clear-btn="false" name="password-1" id="actuel-password-1" value="" autocomplete="off"  placeholder="Mot de passe actuel">
+                <br>
+                <br>
 
-     
-            </form>
-                    <button class="ui-btn ui-btn-inline">Valider</button>
+                 <button class="ui-btn ui-btn-inline">Valider</button>
+            </section>
       </center>
        
        
