@@ -302,8 +302,21 @@
     <li>Date d'inscription<span style="float: right;">01/01/2020</span></li>
     <li>N° de réalisations<span style="float: right;">15</span></li>
     </ul> 
-    <br>
-    <button class="ui-btn" style="background: red;">Supprimer le Compte</button>     
+    <br>    
+    <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop">
+    <button class="ui-btn" style="background: red;">Supprimer le Compte</button></a>
+<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">Vous êtes sur de vouloir effacer ce compte?</h3>
+        <center>
+        <a href="#" data-rel="back">NON</a>
+        <a href="#" data-rel="back">OUI</a>
+        </center>
+    </div>
+</div>
+    
+    
     </div>
     <div data-role="collapsible">
         <h3>user2@gmail.com</h3>
