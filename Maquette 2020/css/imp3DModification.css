@@ -30,3 +30,24 @@
         section .ui-input-text{
             width: 320px;
         }
+
+@media screen and (max-width: 360px)
+{
+    section .ui-btn{
+            width: 250px;
+        }
+        section .ui-input-text{
+            width: 250px;
+        }
+}
+
+
+@media screen and (max-width: 300px)
+{
+    section .ui-btn{
+            width: 210px;
+        }
+        section .ui-input-text{
+            width: 210px;
+        }
+}
